@@ -149,11 +149,11 @@ def start_game(selected_difficulty):
     initialize_tiles()
 
     if difficulty == 'easy':
-        time_limit = 300000  # 5分钟
+        time_limit = 180000  # 3分钟
     elif difficulty == 'medium':
-        time_limit = 200000  # 3分20秒
+        time_limit = 150000  # 1分30秒
     elif difficulty == 'hard':
-        time_limit = 100000  # 1分40秒
+        time_limit = 60000  # 1分钟
 
     start_time = pygame.time.get_ticks()
     game_state = 'playing'
